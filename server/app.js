@@ -3,11 +3,9 @@
  */
 
 'use strict';
-console.log("***********Server Started************")
-// Set default node environment to development
-process.env.NODE_ENV = process.env.NODE_ENV || 'production';
 
-console.log('process.env.NODE_ENV: ', process.env.NODE_ENV);
+// Set default node environment to development
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 var express = require('express');
 var mongoose = require('mongoose');
