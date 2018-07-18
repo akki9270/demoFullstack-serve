@@ -17,7 +17,7 @@ module.exports = function(app) {
   app.use('/auth', require('./auth'));
 
   app.use(function (req, res, next) {
-
+    console.log("REQUEST URL: ", req.url);
     // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
 
